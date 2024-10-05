@@ -1,24 +1,12 @@
-import axios from 'axios'
-
-import './App.css'
+import "./App.css";
+import RoutesApp from "./Routes/RoutesAp";
 
 function App() {
-
-  const apiCall =()=>{
-    axios.get('http://localhost:9000').then((data)=>{
-      console.log(data)
-    })
-
-    }
-  
- 
-
   return (
     <div>
-     <button onClick={apiCall}> Make API Call</button>
-       
+      <RoutesApp />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
